@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className='w-full py-2 flex justify-between items-center pr-2'>
     <div className='flex items-center'>
-    <Image src={'/logo.png'} alt='logo octopus' width={50} height={50} />
+    <Image src={'/logo.png'} alt='logo octopus' width={50} height={38} />
     <p className='font-beba'>DIGITAL OCTOPUS SERVICES</p>
     </div>
     <div>
