@@ -8,11 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        beba:["var(--font_bebas)"],
+        lato:["var(--font_lato)"]
       },
+      colors:{
+        red: "#E97D7D",
+        blue: "#7CBBE0",
+        green: "#7DE9A2",
+        yellow: "#FEEFC6",
+        browm: "#EAA85C",
+        purple:"#907CE0"
+
+      },
+      backgroundImage: {
+       'hero-phone' : "linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5)  100%), url('/hero-phone.webp')",
+       'hero-desktop': "linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5)  100%), url('/hero-desktop.webp')"
+      }
     },
   },
   plugins: [],

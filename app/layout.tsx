@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import {  Bebas_Neue, Lato } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const beba = Bebas_Neue({ subsets: ["latin"], weight: "400",variable:"--font_bebas" });
+const lato = Lato({subsets:["latin"], weight:["100","300","400","700","900"],variable: "--font_lato"})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${beba.variable} ${lato.variable}`}>
+        <Navbar/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }
