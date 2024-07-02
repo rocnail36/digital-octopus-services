@@ -2,3 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.animation_image  {
+     
+    view-timeline-name: --image;
+    view-timeline-axis: --block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 10% 30%;
+    animation-fill-mode: both;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+@keyframes show {
+  
+    0% {
+       opacity: 0;
+    }
+
+    100%  {
+        opacity: 1;
+    }
+
+}
+
+
+.close {
+    transform: translateX(100%);
+}
+
+.open {
+    transform: translateX(0%)
+}
+
+
