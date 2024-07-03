@@ -34,7 +34,7 @@ const Navbar = () => {
             <Link 
             onClick={() => setisOpen(!isOpen)} className='after:w-[0%] hover:after:w-[100%] after:transition-all after:bottom-[-2px] after:left-0 after:absolute after:h-[2px] after:rounded-lg after:bg-blue relative  border-solid border-black box-border' href={`#services`} >SERVICIOS</Link>
             <Link 
-            onClick={() => setisOpen(!isOpen)} className='bg-sky-500 rounded-md py-[5px] px-[10px] text-white hover:scale-105' href={"https://wa.me/584165458026"} >WHATSAPP</Link>
+            onClick={() => setisOpen(!isOpen)} className='bg-sky-500 rounded-md py-[5px] px-[10px] text-white hover:scale-105' href={"https://wa.me/584165458026"} target='_blank' >WHATSAPP</Link>
     </div>
     <div className='md:hidden' onClick={() => setisOpen(!isOpen)}>
         <Image  className='cursor-pointer' src={'/hamburger.svg'} alt='icon-hamburguer' width={30} height={35}/>
