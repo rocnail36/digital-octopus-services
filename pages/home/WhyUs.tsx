@@ -17,7 +17,7 @@ const WhyUs = () => {
                   <CardWhyUs item={item} key={item.title} />
                 ))}
         <button className='bg-[#00A6FB] hover:scale-105 justify-self-start text-white font-lato font-bold text-[18px] rounded-md py-[5px] px-[10px]'>
-        <Link href={"https://wa.me/584165458026"} target='_blank'>¡PRESUPUESTA TU WEB!</Link>
+        <Link href={"https://wa.me/584165458026"} target='_blank'>PRESUPUESTAR MI WEB</Link>
         </button>
             </div>
         </div>
